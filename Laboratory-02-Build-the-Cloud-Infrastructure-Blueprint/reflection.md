@@ -20,6 +20,4 @@ I learned how to investigate a Linux cloud environment using terminal commands. 
 
 My GitHub portfolio improved because I added a complete cloud infrastructure laboratory with technical documentation, investigation results, screenshots, and a cloud architecture diagram. I also practiced organizing files using Markdown and GitHub. This makes my portfolio more useful because it shows practical skills in cloud computing, Linux administration, documentation, and basic infrastructure design.
 
-## Conclusion
 
-This laboratory helped me understand how different cloud infrastructure components work together. It also gave me practical experience using Linux and GitHub, which are useful skills for future cloud and IT projects.
