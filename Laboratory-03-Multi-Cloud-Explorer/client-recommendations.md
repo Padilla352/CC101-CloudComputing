@@ -71,3 +71,13 @@ deploy applications closer to customers in different locations.
 2. Elastic Load Balancing
 3. Amazon S3
 
+# Multi-Cloud Decision Matrix
+
+| Business Requirement | Recommended Platform | Justification |
+|---|---|---|
+| Startup Company | AWS | AWS provides scalable services that can grow with a startup's application. |
+| Enterprise Organization | AWS | AWS provides a broad portfolio of services for different enterprise workloads. |
+| Microsoft Environment | Azure | Azure provides strong integration with Microsoft technologies. |
+| AI / Machine Learning | GCP | GCP provides strong AI, ML, and data-related capabilities. |
+| Kubernetes Deployment | GCP | GKE provides a managed Kubernetes environment for containerized applications. |
+| Global Web Application | AWS | AWS provides global infrastructure and scalable services for web applications. |
