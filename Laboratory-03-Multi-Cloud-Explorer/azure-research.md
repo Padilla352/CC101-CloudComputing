@@ -52,7 +52,3 @@ applications, and organizational resources.
 - Enterprise applications
 - Database systems
 - Hybrid cloud environments
-
-## Screenshot
-
-![Azure Homepage](screenshots/azure-homepage.png)
