@@ -1,6 +1,6 @@
 # Google Cloud Platform (GCP)
 
-## Brief Overview
+## Brief Overview 
 
 Google Cloud Platform (GCP) is a cloud computing platform provided
 by Google. It provides infrastructure, computing, storage, networking,
