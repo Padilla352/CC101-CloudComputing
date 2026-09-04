@@ -7,7 +7,7 @@
 AWS is a suitable choice for the startup because it provides a wide
 selection of cloud services that can support a mobile application.
 The startup can begin with smaller resources and increase them as the
-number of users grows. This allows the company to scale its
+number of users grows. This allows the company to scale its 
 infrastructure as its business expands. AWS also provides services
 for computing, storage, databases, and application development.
 
