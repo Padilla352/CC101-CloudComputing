@@ -54,6 +54,4 @@ resources by managing users, roles, and permissions.
 - Database hosting
 - Disaster recovery
 
-## Screenshot
 
-![AWS Homepage](screenshots/aws-homepage.png)
