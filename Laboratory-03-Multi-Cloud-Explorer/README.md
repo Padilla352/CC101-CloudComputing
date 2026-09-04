@@ -47,6 +47,4 @@ Azure Virtual Machines could host the Linux operating system in Azure.
 
 Google Compute Engine could host the Linux server as a virtual machine.
 
-## Evidence
 
-![KillerCoda Terminal](screenshots/killercoda-terminal.png)
