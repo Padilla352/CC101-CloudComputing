@@ -1,7 +1,7 @@
 # Cloud Platform Comparison
 
 | Category | AWS | Microsoft Azure | Google Cloud Platform |
-|---|---|---|---|
+|---|---|---|---| 
 | Launch Year | 2006 | 2010 | 2008 |
 | Compute Service | Amazon EC2 | Azure Virtual Machines | Compute Engine |
 | Storage Service | Amazon S3 | Azure Blob Storage | Cloud Storage |
