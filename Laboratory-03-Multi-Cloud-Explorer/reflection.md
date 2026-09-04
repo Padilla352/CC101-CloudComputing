@@ -1,5 +1,5 @@
 # Mission 3 Reflection
-
+ 
 ## 1. Which Cloud Platform Impressed You the Most?
 
 Among AWS, Microsoft Azure, and Google Cloud Platform, the cloud platform that impressed me the most was Amazon Web Services (AWS). Before doing this activity, I mostly knew AWS as a popular cloud provider, but I did not realize how many different services it offers. While researching AWS, I learned about services such as Amazon EC2, Amazon S3, Amazon VPC, and AWS IAM. Seeing how these services work together helped me understand how companies can build and manage complete IT environments in the cloud.
