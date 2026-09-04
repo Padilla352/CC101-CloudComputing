@@ -52,7 +52,3 @@ to deploy and manage containerized applications.
 - Data analytics
 - Containerized applications
 - Kubernetes deployments
-
-## Screenshot
-
-![GCP Homepage](screenshots/gcp-homepage.png)
