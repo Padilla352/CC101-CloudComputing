@@ -1,0 +1,62 @@
+# Mission Reflection
+
+## 1. How does the boot time and setup process of a Docker container compare to installing an operating system on a Virtual Machine?
+
+
+For me, I noticed that Docker containers are much faster to set up compared to installing an operating system on a Virtual Machine. When using a Virtual Machine, I need to create the virtual machine, assign resources such as RAM and storage, install an operating system, and configure it before I can install and run an application. Because of these steps, the setup can take several minutes or even longer.
+
+With Docker, the process is much simpler. In this activity, I only needed to use commands such as `docker pull nginx` and `docker run` to get the Nginx image and start the web server. I did not need to install another operating system because the container uses the host operating system's kernel. This made the application available much faster.
+
+I also learned that containers generally use fewer resources because they do not include a complete guest operating system like a VM. This makes containers useful when applications need to start quickly and when resources are limited. However, I also understand that VMs and containers are designed for different purposes. Based on my experience in this activity, Docker made the setup of the Nginx web server much faster and easier than setting up a complete Virtual Machine.
+
+---
+
+## 2. Why is port mapping (-p 8080:80) necessary when running a web server inside a container?
+
+
+I learned that port mapping is necessary because the Nginx web server is running inside the Docker container and its port is isolated from the host system. In my activity, Nginx uses port 80 inside the container. If I want to access Nginx from the host, I need to connect a host port to the container's port.
+
+The command I used was `docker run -d --name nginx-server -p 8080:80 nginx`. The `-p 8080:80` means that port 8080 on the host is connected to port 80 inside the container. This allowed me to access the Nginx web server by using `http://localhost:8080`.
+
+I verified that the port mapping was working by running `curl http://localhost:8080` in the KillerCoda terminal. The command returned the HTML code of the Nginx welcome page. This showed me that the request from port 8080 on the host was successfully reaching Nginx inside the container.
+
+Before doing this activity, I did not fully understand how containers could expose their applications to the outside. After performing the command myself, I understood that port mapping acts as a connection between the host and the service running inside the container. It also allows the container to remain isolated while still making the required application accessible.
+
+---
+
+## 3. What happens to the data inside a container when you use the docker rm command?
+
+
+From this activity, I learned that `docker rm` is used to completely remove a stopped container. When I use `docker stop`, the container is only stopped, so I can still see it using `docker ps -a`. However, when I use `docker rm`, the container itself is deleted from Docker.
+
+The data stored in the container's writable layer is also removed when the container is deleted. Because of this, I should not store important or permanent information only inside a container. If I need data to remain available even after deleting a container, I need to use persistent storage such as Docker volumes.
+
+For example, in my activity, I created an Nginx container named `nginx-server`. After testing the web server, I stopped it using `docker stop nginx-server`. I then used `docker ps -a` to verify that the stopped container was still present. After that, I used `docker rm nginx-server` and checked `docker ps -a` again. The container was no longer listed.
+
+This helped me understand the difference between stopping and removing a container. Stopping a container keeps it available for future use, while removing it deletes the container. I learned that container data should be managed properly when working with applications that need permanent information.
+
+---
+
+## 4. How do you think containerization changes the way software developers and IT operations teams work together (DevOps)?
+
+
+I think containerization can make the work between software developers and IT operations teams easier and more consistent. One problem that can happen during software development is when an application works on the developer's computer but does not work correctly on another computer or server. Containers can help reduce this problem because the application and its required dependencies can be packaged together.
+
+From what I learned in this activity, Docker allows an application to be created and managed in a consistent environment. For example, I was able to pull an Nginx image and run it using Docker commands without manually installing and configuring Nginx on the Ubuntu environment. The same container image can also be used in another compatible environment.
+
+This can help developers because they can focus on building and testing the application, while IT operations teams can use the same container image for deployment. It can also make deployment easier to repeat because the same commands and configuration can be used.
+
+For me, containerization shows how development and operations can work more closely together. Instead of manually configuring every server, teams can use containers and automation to make the deployment process more consistent. I also learned that DevOps is not only about using a specific technology. It is also about communication, collaboration, automation, and making the process of developing and deploying software more efficient.
+
+---
+
+## 5. How is your GitHub portfolio evolving?
+
+
+My GitHub portfolio is slowly becoming more organized and useful as I continue completing my cloud computing laboratory activities. Before, I mainly viewed GitHub as a place where I could store my projects and files. Through these laboratory activities, I started to understand that GitHub can also serve as a portfolio that shows my skills, learning progress, and technical experience.
+
+For this laboratory, I created a new folder called `Laboratory-04-Cloud-Native-Engineer`. Inside the folder, I organized my Markdown files and screenshots. I documented the difference between Virtual Machines and containers, the Docker commands I used, the deployment of the Nginx web server, and my reflection about the activity.
+
+I also included screenshots as evidence of the actual work I completed in the KillerCoda environment. This makes my portfolio more meaningful because it does not only contain written explanations but also shows evidence of my practical activities.
+
+As I continue adding more laboratories, my GitHub repository is becoming a record of the skills I am learning as a BSIT student. In this activity, I added knowledge about Docker, containers, Nginx, port mapping, Linux commands, and container lifecycle management. I believe that continuing to organize my projects and document what I learn will make my portfolio more useful when I need to demonstrate my technical skills in the future.
