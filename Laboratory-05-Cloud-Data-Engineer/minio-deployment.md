@@ -2,13 +2,24 @@
 
 ## Overview
 
-MinIO was deployed as an object storage server using Docker. The deployment was performed in an Ubuntu 24.04 environment using KillerCoda.
+For this laboratory, I deployed an S3-compatible MinIO object storage
+server using Docker on a KillerCoda Ubuntu 24.04 environment.
 
-## Docker Image
+The original laboratory command used the `minio/minio` image. Because that
+image could not be pulled in my environment, I used the available
+`elestio/minio` image instead.
 
-The original laboratory instructions referenced the `minio/minio` image. In my environment, pulling that image returned an access/authorization error. After troubleshooting, the `elestio/minio` image was successfully pulled and used for the deployment.
+## Docker Command
 
-## Pull the MinIO Image
+The command I successfully used was:
 
 ```bash
-docker pull elestio/minio
+
+docker run -d \
+  -p 9000:9000 \
+  -p 9001:9001 \
+  --name minio-server \
+  -e "MINIO_ROOT_USER=cloudadmin" \
+  -e "MINIO_ROOT_PASSWORD=CloudNova2026!" \
+  elestio/minio \
+  server /data --console-address ":9001"
