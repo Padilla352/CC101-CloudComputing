@@ -15,6 +15,8 @@ This laboratory activity demonstrates how to deploy a private cloud storage appl
 
 ## Commands Executed
 
+The following commands were used to create the project directory, configure the Docker Compose file, deploy the services, check the containers, and stop the deployment.
+
 ```bash
 mkdir nextcloud-deployment
 cd nextcloud-deployment
@@ -24,6 +26,15 @@ docker-compose ps
 docker-compose down
 ```
 
+## Database Configuration
+
+- **Database service:** `database`
+- **Database name:** `nextcloud_db`
+- **Database username:** `calderon_jessy`
+- **Web application:** Nextcloud
+- **Database server:** MariaDB
+- **Port mapping:** `8080:80`
+
 ## Skills Learned
 
 - Docker Compose configuration
@@ -31,15 +42,35 @@ docker-compose down
 - YAML syntax and indentation
 - Database and web application communication
 - Linux command-line operations
-- Technical documentation
+- Technical documentation using Markdown
 - GitHub portfolio management
+- Infrastructure as Code (IaC)
 
 ## Screenshots
 
-- `screenshots/compose-deployment.png`
-- `screenshots/nextcloud-web.png`
-- `screenshots/compose-teardown.png`
+The following screenshots document the deployment, web interface, and teardown process.
 
-## Conclusion
+### 1. Docker Compose Deployment
 
-This mission helped me understand how Docker Compose can manage multiple containers through a single configuration file. It also allowed me to practice deploying a web application with a separate database service.
+This screenshot shows the Nextcloud and MariaDB containers after running the Docker Compose deployment commands.
+
+![Docker Compose Deployment](screenshots/compose-deployment.png)
+
+**Filename:** `screenshots/compose-deployment.png`
+
+### 2. Nextcloud Web Interface
+
+This screenshot shows the Nextcloud installation page accessed through port 8080 in the KillerCoda environment.
+
+![Nextcloud Web Interface](screenshots/nextcloud-web.png)
+
+**Filename:** `screenshots/nextcloud-web.png`
+
+### 3. Docker Compose Teardown
+
+This screenshot shows the terminal output after the Docker Compose services have been stopped and removed.
+
+![Docker Compose Teardown](screenshots/compose-teardown.png)
+
+**Filename:** `screenshots/compose-teardown.png`
+
